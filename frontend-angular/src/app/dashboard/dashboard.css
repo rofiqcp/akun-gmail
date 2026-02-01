@@ -1,0 +1,85 @@
+.dashboard-container {
+	min-height: 100vh;
+	background: #f5f7fa;
+}
+
+header {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	margin: 0;
+}
+
+header button {
+	background: white;
+	color: #667eea;
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+header button:hover {
+	background: #f0f0f0;
+}
+
+.dashboard-content {
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.5rem;
+}
+
+.card {
+	background: white;
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2, .card h3 {
+	margin-top: 0;
+	color: #333;
+}
+
+.card p {
+	color: #666;
+}
+
+.users-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+
+.users-table thead {
+	background: #f0f0f0;
+}
+
+.users-table th,
+.users-table td {
+	padding: 0.75rem;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+	font-weight: 600;
+	color: #333;
+}
+
+.users-table tbody tr:hover {
+	background: #f9f9f9;
+}
+
+.loading {
+	color: #999;
+	font-style: italic;
+}

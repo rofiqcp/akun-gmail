@@ -1,0 +1,10 @@
+com/example/controller/TokenRequest.class
+com/example/controller/AuthenticationController$1.class
+com/example/repository/UserRepository.class
+com/example/controller/LoginRequest.class
+application.yml
+com/example/controller/WelcomeController.class
+com/example/config/UserService.class
+com/example/controller/AuthenticationController.class
+com/example/model/User.class
+com/example/config/SecurityConfig.class

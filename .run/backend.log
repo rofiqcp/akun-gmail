@@ -1,0 +1,43 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2026-02-01 14:06:40.395  INFO 2941708 --- [           main] com.example.GmailBackendApplication      : Starting GmailBackendApplication v1.0.0 using Java 17.0.17 on otomasi1 with PID 2941708 (/root/otomasi/gmail/backend-spring/target/gmail-backend-1.0.0.jar started by root in /root/otomasi/gmail)
+2026-02-01 14:06:40.401  INFO 2941708 --- [           main] com.example.GmailBackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-02-01 14:06:42.943  INFO 2941708 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-01 14:06:43.158  INFO 2941708 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 1 JPA repository interfaces.
+2026-02-01 14:06:45.715  INFO 2941708 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-02-01 14:06:45.743  INFO 2941708 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-01 14:06:45.743  INFO 2941708 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2026-02-01 14:06:45.956  INFO 2941708 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-01 14:06:45.956  INFO 2941708 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5412 ms
+2026-02-01 14:06:46.066  INFO 2941708 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-01 14:06:47.075  INFO 2941708 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-01 14:06:47.129  INFO 2941708 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-01 14:06:48.022  INFO 2941708 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-01 14:06:48.249  INFO 2941708 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2026-02-01 14:06:48.746  INFO 2941708 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-01 14:06:49.086  INFO 2941708 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-02-01 14:06:50.957  INFO 2941708 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-01 14:06:50.978  INFO 2941708 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-01 14:06:52.246  WARN 2941708 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 14:06:52.330  WARN 2941708 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6306fbfd-c4ea-4f6d-96cd-d61c82b1beed
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-01 14:06:52.611  INFO 2941708 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f5eae0f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58b71ceb, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d7b1f1c, org.springframework.security.web.header.HeaderWriterFilter@5b84f14, org.springframework.security.web.authentication.logout.LogoutFilter@59c33386, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f44ddab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4726927c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@255e5e2e, org.springframework.security.web.session.SessionManagementFilter@27a97e08, org.springframework.security.web.access.ExceptionTranslationFilter@633a2e99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b5183ec]
+2026-02-01 14:06:54.310  INFO 2941708 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-01 14:06:54.344  INFO 2941708 --- [           main] com.example.GmailBackendApplication      : Started GmailBackendApplication in 15.718 seconds (JVM running for 17.026)
+2026-02-01 14:08:58.859  INFO 2941708 --- [nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-01 14:08:58.861  INFO 2941708 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-01 14:08:58.864  INFO 2941708 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-01 14:10:07.261  INFO 2941708 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-01 14:10:07.266  INFO 2941708 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-01 14:10:07.285  INFO 2941708 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
