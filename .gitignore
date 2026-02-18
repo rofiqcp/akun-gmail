@@ -1,0 +1,21 @@
+# Maven build output
+backend-spring/target/
+
+# Node modules
+frontend-vue/node_modules/
+frontend-angular/node_modules/
+
+# Vue build output
+frontend-vue/dist/
+
+# Angular build output
+frontend-angular/dist/
+
+# Environment variables (contain secrets)
+frontend-vue/.env
+frontend-vue/.env.local
+
+# Logs
+*.log
+.run/*.log
+.run/*.pid
