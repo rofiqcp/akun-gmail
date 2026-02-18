@@ -43,6 +43,9 @@ public class UserService {
             user = new User(email, name, picture);
         }
         
+        // Google OAuth users are inherently verified – their email is confirmed by Google
+        user.setEmailVerified(true);
+        
         return userRepository.save(user);
     }
     

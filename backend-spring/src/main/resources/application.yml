@@ -48,4 +48,10 @@ google:
 
 # Application URL
 app:
-  url: http://localhost:4200
+  url: http://localhost:5173
+
+# OpenAI Configuration
+# Set OPENAI_API_KEY environment variable with your OpenAI API key
+# Get your key from: https://platform.openai.com/api-keys
+openai:
+  api-key: ${OPENAI_API_KEY:}

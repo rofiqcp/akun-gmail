@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="/root/otomasi/gmail"
 BACKEND_DIR="$ROOT_DIR/backend-spring"
-FRONTEND_DIR="$ROOT_DIR/frontend-angular"
+FRONTEND_DIR="$ROOT_DIR/frontend-vue"
 RUN_DIR="$ROOT_DIR/.run"
 BACKEND_PID_FILE="$RUN_DIR/backend.pid"
 FRONTEND_PID_FILE="$RUN_DIR/frontend.pid"
@@ -33,20 +33,20 @@ start_frontend() {
     return 0
   fi
   if [[ ! -f "$FRONTEND_DIR/package.json" ]]; then
-    echo "Frontend not found. Please ensure Angular project exists."
+    echo "Frontend not found. Please ensure Vue project exists at $FRONTEND_DIR."
     return 1
   fi
-  # Kill any process using port 4200
-  pkill -f "ng serve" 2>/dev/null || true
-  fuser -k 4200/tcp 2>/dev/null || true
+  # Kill any process using port 5173
+  pkill -f "vite" 2>/dev/null || true
+  fuser -k 5173/tcp 2>/dev/null || true
   sleep 2
-  (cd "$FRONTEND_DIR" && nohup npm start > "$FRONTEND_LOG" 2>&1 &)
+  (cd "$FRONTEND_DIR" && nohup npm run dev > "$FRONTEND_LOG" 2>&1 &)
   FRONTEND_NEW_PID=$!
   echo $FRONTEND_NEW_PID > "$FRONTEND_PID_FILE"
   sleep 3
   # Verify the process is still running
   if kill -0 $FRONTEND_NEW_PID 2>/dev/null; then
-    echo "Frontend started (PID $FRONTEND_NEW_PID)"
+    echo "Frontend started (PID $FRONTEND_NEW_PID) — http://localhost:5173"
   else
     echo "Frontend failed to start. Check logs: tail -f $FRONTEND_LOG"
     cat "$FRONTEND_LOG"
